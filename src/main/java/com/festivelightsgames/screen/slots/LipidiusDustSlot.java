@@ -2,7 +2,7 @@ package com.festivelightsgames.screen.slots;
 
 import com.festivelightsgames.Dust_Lipidius;
 import com.festivelightsgames.EnchantmentDust;
-import com.festivelightsgames.MinecraftMod;
+import com.festivelightsgames.AlchemicalEnchantments;
 import com.festivelightsgames.screen.EnchantmentRollerScreenHandler;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
@@ -16,7 +16,7 @@ public class LipidiusDustSlot extends EnchantmentDustSlot {
 
     @Override
     public boolean canInsert(ItemStack stack){
-        if(stack.getItem() == MinecraftMod.Dust_Lipidius){
+        if(stack.getItem() == AlchemicalEnchantments.Dust_Lipidius){
             return true;
         }
         else{

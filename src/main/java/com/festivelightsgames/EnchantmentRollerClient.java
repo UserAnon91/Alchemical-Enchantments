@@ -10,7 +10,7 @@ import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 public class EnchantmentRollerClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        ScreenRegistry.register(MinecraftMod.ENCHANTMENT_SCREEN_HANDLER, EnchantmentRollerScreen::new);
+        ScreenRegistry.register(AlchemicalEnchantments.ENCHANTMENT_SCREEN_HANDLER, EnchantmentRollerScreen::new);
     }
 
 }

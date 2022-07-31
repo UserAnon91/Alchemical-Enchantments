@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "minecraftmod",
+  "id": "alchemicalenchantments",
   "version": "${version}",
 
-  "name": "Festive Lights Minecraft Mod",
+  "name": "Festive Lights Alchemical Enchantments",
   "description": "Enchantment Fun",
   "authors": [
     "UserAnon"
@@ -14,19 +14,19 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/MinecraftMod/icon.png",
+  "icon": "assets/AlchemicalEnchantments/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.festivelightsgames.MinecraftMod"
+      "com.festivelightsgames.AlchemicalEnchantments"
     ],
     "client": [
       "com.festivelightsgames.EnchantmentRollerClient"
     ]
   },
   "mixins": [
-    "MinecraftMod.mixins.json"
+    "AlchemicalEnchantments.mixins.json"
   ],
 
   "depends": {

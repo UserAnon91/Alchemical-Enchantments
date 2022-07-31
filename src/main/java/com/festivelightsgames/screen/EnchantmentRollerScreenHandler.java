@@ -1,6 +1,6 @@
 package com.festivelightsgames.screen;
 
-import com.festivelightsgames.MinecraftMod;
+import com.festivelightsgames.AlchemicalEnchantments;
 import com.festivelightsgames.screen.slots.EnchantableItem;
 import com.festivelightsgames.screen.slots.EnchantedItemOutput;
 import com.festivelightsgames.screen.slots.EnchantmentDustSlot;
@@ -42,7 +42,7 @@ public class EnchantmentRollerScreenHandler extends ScreenHandler {
 
     //Set up slots for inventories
     public EnchantmentRollerScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
-        super(MinecraftMod.ENCHANTMENT_SCREEN_HANDLER, syncId);
+        super(AlchemicalEnchantments.ENCHANTMENT_SCREEN_HANDLER, syncId);
         checkSize(inventory, InventorySize);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);
@@ -573,8 +573,8 @@ public class EnchantmentRollerScreenHandler extends ScreenHandler {
         boolean[] slotIsValid = new boolean[5];
 
         for (int i = 0; i < 5; i++) {
-            if (slots.get(i).getStack().getItem() == MinecraftMod.Dust_Vantium && InventoryHasThisItemAlready(MinecraftMod.Dust_Amodus, slots)
-                    || slots.get(i).getStack().getItem() == MinecraftMod.Dust_Amodus && InventoryHasThisItemAlready(MinecraftMod.Dust_Vantium, slots)) {
+            if (slots.get(i).getStack().getItem() == AlchemicalEnchantments.Dust_Vantium && InventoryHasThisItemAlready(AlchemicalEnchantments.Dust_Amodus, slots)
+                    || slots.get(i).getStack().getItem() == AlchemicalEnchantments.Dust_Amodus && InventoryHasThisItemAlready(AlchemicalEnchantments.Dust_Vantium, slots)) {
                 slotIsValid[i] = false;
                 continue;
             } else {

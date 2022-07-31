@@ -14,7 +14,7 @@ public class EnchantmentButton implements ButtonWidget.PressAction {
 
     @Override
     public void onPress(ButtonWidget button) {
-        ClientPlayNetworking.send(new Identifier("minecraftmod", "push_enchantment_button"), PacketByteBufs.empty());
+        ClientPlayNetworking.send(new Identifier("alchemicalenchantments", "push_enchantment_button"), PacketByteBufs.empty());
 
 
     }

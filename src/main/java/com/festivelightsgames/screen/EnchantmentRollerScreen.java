@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class EnchantmentRollerScreen extends HandledScreen<EnchantmentRollerScreenHandler> {
-    private static final Identifier TEXTURE = new Identifier("minecraftmod", "textures/enchantmentrollerui.png");
+    private static final Identifier TEXTURE = new Identifier("alchemicalenchantments", "textures/enchantmentrollerui.png");
 
     int validSlotY = 223;
     int invalidSlotY = 239;

@@ -16,7 +16,7 @@ import net.minecraft.util.math.BlockPos;
 public class EnchantmentRollerEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory{
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(EnchantmentRollerScreenHandler.InventorySize, ItemStack.EMPTY);
     public EnchantmentRollerEntity(BlockPos pos, BlockState state){
-        super(MinecraftMod.ENCHANTMENT_ROLLER_ENTITY, pos, state);
+        super(AlchemicalEnchantments.ENCHANTMENT_ROLLER_ENTITY, pos, state);
     }
 
     @Override
